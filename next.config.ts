@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  eslint: {
+    ignoreDuringBuilds: false,
+    dirs: ['src', 'app', 'components', 'lib', 'utils'] // adjust these directories based on your project structure
+  }
+}
 
-export default nextConfig;
+export default nextConfig
